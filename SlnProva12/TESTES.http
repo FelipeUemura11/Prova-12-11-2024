@@ -1,0 +1,41 @@
+# RAIZ
+http://localhost:5228
+
+### CADASTRAR ALUNO
+POST http://localhost:5228/api/aluno/cadastrar
+Content-Type: application/json
+
+{
+    "Nome": "Felipe",
+    "Sobrenome": "Uemura"
+}
+
+### CADASTRAR IMC
+PUT http://localhost:5228/api/imc/cadastrar/1
+Content-Type: application/json
+
+{
+    "Peso": 58.0,
+    "Altura": 1.73
+}
+
+### LISTAR IMCs
+GET http://localhost:5228/api/imc/listar
+
+### LISTAR IMCs por aluno
+GET http://localhost:5228/api/imc/listarporaluno/1
+
+### ALTERAR IMC
+PUT http://localhost:5228/api/imc/alterar/1
+Content-Type: application/json
+
+{
+    "Nome": "Marcelo",
+    "Sobrenome": "Takashi",
+    "Peso": 88.0,
+    "Altura": 1.75,
+    "IMC": 28.73,
+    "Classificacao": "Sobrepeso",
+    "Obesidade": 1,
+    "CriadoEm": "0001-02-01T00:00:00"
+}
